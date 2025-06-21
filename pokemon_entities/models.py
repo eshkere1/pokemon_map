@@ -10,6 +10,12 @@ class PokemonEntity(models.Model):
     longetude = models.FloatField(verbose_name="Долгота нахождения покемона")
     appeared_at = models.DateTimeField(verbose_name="время и дата появления покемона")
     disappeared_at = models.DateTimeField(verbose_name="время и дата исчезновения покемона")
+    level = models.IntegerField(verbose_name="уровень покемона")
+    health = models.IntegerField(verbose_name="здоровье")
+    strength = models.IntegerField(verbose_name="сила")
+    defence = models.IntegerField(verbose_name="защита")
+    stamina = models.IntegerField(verbose_name="выносливость")
 
+    
     def __str__(self):
         return self.title
