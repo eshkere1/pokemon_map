@@ -5,6 +5,7 @@ class Pokemon(models.Model):
     photo = models.ImageField(null=True, blank=True, verbose_name="изображение покемона")
 
 class PokemonEntity(models.Model):
+    pokemon = models.ForeignKey(Pokemon, on_delete=models.CASCADE)
     latitude = models.FloatField(verbose_name="Широта нахождения покемона")
     longetude = models.FloatField(verbose_name="Долгота нахождения покемона")
 
