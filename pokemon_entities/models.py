@@ -21,4 +21,4 @@ class PokemonEntity(models.Model):
 
 
     def __str__(self):
-        return self.pokemon.title, self.latitude, self.longetude
+        return f"{self.pokemon.title} at ({self.latitude}, {self.longetude})"
