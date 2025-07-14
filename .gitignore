@@ -7,8 +7,8 @@
 
 # Icon must end with two \r
 Icon
-
-
+media/
+**/*pokemons.json
 # Thumbnails
 ._*
 
